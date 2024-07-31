@@ -1,7 +1,6 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require("path");
-const PACKAGE = require("./package.json");
 const createExpoWebpackConfigAsync = require("@expo/webpack-config");
 
 const isProduction = process.env.NODE_ENV == "production";
