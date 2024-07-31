@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "module": "NodeNext",
+    "target": "es5",
+    "allowJs": true,
+    "strictNullChecks": true,
+    "outDir": "build",
+    "moduleResolution": "NodeNext",
+    "jsx": "react-native",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/node_modules"]
+}
