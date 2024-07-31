@@ -8,13 +8,19 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const getExpoConfig = async function (env, argv) {
   const config = await createExpoWebpackConfigAsync(env, argv);
-  config.entry = "./src/index.ts";
+
+  const mod = env.mod; //argv.find((arg) => arg.startsWith("--mod=")).split("=")[1];
+  const ENTRY_POINTS = {
+    TransmutableCaliburn: "./src/TransmutableCaliburn/index.ts",
+  };
+  config.entry = ENTRY_POINTS[mod];
+
   config.output = {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist", mod),
     library: {
       type: "this",
     },
-    filename: `${PACKAGE.name}.js`,
+    filename: `${mod}.js`,
   };
 
   // Max image size 999 MB
