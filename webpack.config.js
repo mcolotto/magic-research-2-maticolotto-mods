@@ -12,6 +12,7 @@ const getExpoConfig = async function (env, argv) {
   const ENTRY_POINTS = {
     TransmutableCaliburn: "./src/TransmutableCaliburn/index.ts",
     Mark: "./src/Mark/index.ts",
+    UnleashTheWorlds: "./src/UnleashTheWorlds/index.ts",
   };
   config.entry = ENTRY_POINTS[mod];
 
