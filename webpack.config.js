@@ -8,9 +8,10 @@ const isProduction = process.env.NODE_ENV == "production";
 const getExpoConfig = async function (env, argv) {
   const config = await createExpoWebpackConfigAsync(env, argv);
 
-  const mod = env.mod; //argv.find((arg) => arg.startsWith("--mod=")).split("=")[1];
+  const mod = env.mod;
   const ENTRY_POINTS = {
     TransmutableCaliburn: "./src/TransmutableCaliburn/index.ts",
+    Mark: "./src/Mark/index.ts",
   };
   config.entry = ENTRY_POINTS[mod];
 
