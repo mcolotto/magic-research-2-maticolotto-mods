@@ -30,6 +30,7 @@
     "build-caliburn": "webpack --node-env=development --env mod=TransmutableCaliburn",
     "build-mark": "webpack --node-env=development --env mod=Mark",
     "build-worlds": "webpack --node-env=development --env mod=UnleashTheWorlds",
+    "build-rebalanced": "webpack --node-env=development --env mod=MR2Rebalanced",
     "watch": "webpack --watch",
     "upgrade-sdk": "yarn upgrade --latest magic-research-2-modding-sdk"
   }
