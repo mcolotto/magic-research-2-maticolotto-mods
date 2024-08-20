@@ -111,7 +111,7 @@ export function loadOddfruit(MR2: MR2Globals) {
       return super.getNextAction(state);
     }
     getItemsAwardedBase(state: GameState): EnemyLoot[] {
-      return [{ itemId: "orangeMushroom", amount: 1, chance: 0.25 }];
+      return [{ itemId: "wildgrass", amount: 4, chance: 0.25 }];
     }
   }
 }
